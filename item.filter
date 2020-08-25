@@ -1,4 +1,4 @@
-﻿// Krv's filter - Created on 23-08-2020
+// Krv's filter - Created on 23-08-2020, last edited on 25-08-2020
 
 // Performance optimizers
 ItemDisplay[RW]: %NAME%
@@ -10,10 +10,10 @@ ItemDisplay[CLVL>40 MAG (aq2 OR cq2)]:
 // Name Additions
 ItemDisplay[ETH]: ETH %NAME%%CONTINUE%
 ItemDisplay[SOCKETS>0]: %NAME% %YELLOW%[%SOCKETS%]%CONTINUE%
-ItemDisplay[NMAG ED=15]: %NAME%%ORANGE% +15%ED%CONTINUE%
-ItemDisplay[NMAG (ED<15 AND ED>9)]: %NAME%%BLUE% +%ED%CONTINUE%
-ItemDisplay[NMAG ITEMSTAT91=-10]: %ORANGE% -%REQ%CONTINUE%
-ItemDisplay[NMAG (ITEMSTAT91>-10 AND ITEMSTAT91<0)]: %BLUE% -%REQ%CONTINUE%
+ItemDisplay[NMAG ED=15]: %NAME% %ORANGE%+15%ED%CONTINUE%
+ItemDisplay[NMAG (ED<15 AND ED>9)]: %NAME% %BLUE%+%ED%CONTINUE%
+ItemDisplay[NMAG ITEMSTAT91=-10]: %NAME% %ORANGE%-%REQ%CONTINUE%
+ItemDisplay[NMAG (ITEMSTAT91>-10 AND ITEMSTAT91<0)]: %NAME% %BLUE%-%REQ%CONTINUE%
 
 // Gold
 ItemDisplay[CLVL>69 GOLD<5000]:
@@ -40,8 +40,7 @@ ItemDisplay[CLVL>20 (gpm OR opm OR opl OR ops OR gps OR gpl)]:
 
 // Normal Items
 // +%ED Body Armours
-ItemDisplay[NMAG EQ2 ED>0 (ltp OR xtp OR uui OR uea OR ula OR utu OR ung OR ucl OR urs OR uhn OR upl OR utp OR uld OR ult OR uth OR uar)]: %DGREEN%%NAME%
-ItemDisplay[NMAG EQ2 ITEMSTAT91=-10 (ltp OR xtp OR uui OR uea OR ula OR utu OR ung OR ucl OR urs OR uhn OR upl OR utp OR uld OR ult OR uth OR uar)]: %DGREEN%%NAME%
+ItemDisplay[NMAG EQ2 (ED>0 OR ITEMSTAT91=-10) (ltp OR xtp OR uui OR uea OR ula OR utu OR ung OR ucl OR urs OR uhn OR upl OR utp OR uld OR ult OR uth OR uar)]: %DGREEN%%NAME%
 
 // High Def Body Armours
 ItemDisplay[NMAG ETH EQ2 ((uui AND DEF>664) OR (uea AND DEF>668) OR (ula AND DEF>674) OR (utu AND DEF>684) OR (ung AND DEF>695) OR (ucl AND DEF>705) OR (urs AND DEF>710) OR (uhn AND DEF>718) OR (upl AND DEF>730) OR (utp AND DEF>735) OR (uld AND DEF>744) OR (ult AND DEF>754) OR (uth AND DEF>768) OR (uul AND DEF>792) OR (uar AND DEF>849) OR (utp AND DEF>620) OR (uar DEF>720))]: %DGREEN%%NAME%
@@ -90,9 +89,6 @@ ItemDisplay[NMAG !ETH SOCK=2 CLVL<60 EQ1]: %DGREEN%%NAME%
 ItemDisplay[NMAG !ETH SOCK=2 CLVL<60 EQ2]: %DGREEN%%NAME%
 ItemDisplay[NMAG !ETH SOCK=3 CLVL<60 EQ3]: %DGREEN%%NAME%
 
-// Phaseblades ^-^
-ItemDisplay[NMAG 7cr]: %DGREEN%%NAME%
-
 // Lawbringer Swords - Legend Sword (and Conquest Sword, Cryptic Sword, Mythical Sword)
 ItemDisplay[NMAG 72h ETH ED>9 (SOCK=0 OR SOCK=3)]: %DGREEN%%NAME%
 ItemDisplay[NMAG 72h ETH (SOCK=0 OR SOCK=3)]: %DGREEN%%NAME%
@@ -104,7 +100,7 @@ ItemDisplay[NMAG !INF WEAPON SOCK=4 (7vo OR 7s8 OR 7pa OR 7h7 OR 7wc OR 7tr OR 7
 ItemDisplay[NMAG CLVL<65 WEAPON SOCK=4 (vou OR scy OR pax OR hal OR wsc OR 9vo OR 9s8 OR 9pa OR 9h9 OR 9wc OR tri OR brn OR spt OR pik OR 9tr OR 9br OR 9st OR 9p9)]: %DGREEN%%NAME%
 
 // Good Weapon Bases - Ettin Axe, Berserker Axe, Glorious Axe, Scourge, Legendary Mallet, Thunder Maul, War Pike, Colossus Crossbow
-ItemDisplay[NMAG !INF WEAPON !SOCK=2 (72a OR 7wa OR 7gi OR 7fl OR 7wh OR 7gm OR 7p7 OR 6hx))]: %DGREEN%%NAME%
+ItemDisplay[NMAG WEAPON (SOCK=0 OR SOCK>4) (7cr OR 72a OR 7wa OR 7gi OR 7fl OR 7wh OR 7gm OR 7p7 OR 6hx))]: %DGREEN%%NAME%
 
 // +ED Weapons
 ItemDisplay[NMAG ED>9 CLVL<60 (WP1 OR WP2 OR WP3 OR WP7 OR WP8 OR WP9 OR WP10 OR WP13)]: %DGREEN%%NAME%
@@ -116,7 +112,10 @@ ItemDisplay[NMAG !INF CL7 ELT TABSK2>2 (SOCK=0 OR SOCK>4)]: %DGREEN%%NAME%
 
 // Holy Thunder Runeword Bases (60 teleport charges)
 ItemDisplay[NMAG wsp SOCK=4]: %DGREEN%%NAME%
-ItemDisplay[NMAG wsp !SUP !INF SOCK=0 CLVL<70]: %DGREEN%%NAME%%ORANGE%Cube for 4os (Holy Thunder)
+ItemDisplay[NMAG wsp !SUP !INF SOCK=0 CLVL<70]: %DGREEN%%NAME% %ORANGE%Cube for 4os (Holy Thunder)
+
+// Shockwave Bases 
+ItemDisplay[NMAG ETH !INF SOCK=4 (6cs OR 6bs OR 6ws)]: %DGREEN%%NAME% %ORANGE%[Shockwave Insight Base]
 
 // Good 6 socket bases
 ItemDisplay[NMAG !INF WEAPON SOCK=6 (mpi OR wax OR 7mp OR 7wa OR 7gi OR 7gm OR hal OR spt OR 9cr OR 7gd OR lbb)]: %DGREEN%%NAME%
@@ -188,8 +187,8 @@ ItemDisplay[UNI]: %NAME%
 
 // Sets
 ItemDisplay[SET !ID (amu OR uth OR xul)]: %PURPLE%¤¤¤¤¤¤¤¤ %GREEN%%NAME% %PURPLE%¤¤¤¤¤¤¤¤
-ItemDisplay[SET !ID (ulg OR uar OR utc OR xmg OR xtb)]: %PURPLE%¤¤¤¤ %GREEN%%NAME% %PURPLE%¤¤¤¤
-ItemDisplay[SET !ID (7gd OR 7wd OR xar OR ne9 OR ba5 OR 7m7 OR zhb OR xhg OR xhb OR xh9 OR 7qr OR ucl OR xmb OR xhm OR xml OR oba OR xsk OR zmb OR uh9)]: %PURPLE%¤¤ %GREEN%%NAME% %PURPLE%¤¤
+ItemDisplay[SET !ID (uar OR utc OR xmg OR xtb)]: %PURPLE%¤¤¤¤ %GREEN%%NAME% %PURPLE%¤¤¤¤
+ItemDisplay[SET !ID (ulg OR 7gd OR 7wd OR xar OR ne9 OR ba5 OR 7m7 OR zhb OR xhg OR xhb OR xh9 OR 7qr OR ucl OR xmb OR xhm OR xml OR oba OR xsk OR zmb OR uh9)]: %PURPLE%¤¤ %GREEN%%NAME% %PURPLE%¤¤
 ItemDisplay[SET]: %NAME%
 
 //Vendor items
