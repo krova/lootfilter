@@ -1,4 +1,4 @@
-// Krv's filter - Created on 23-08-2020, last edited on 25-08-2020
+// Krv's filter - Created on 23-08-2020
 
 // Performance optimizers
 ItemDisplay[RW]: %NAME%
@@ -121,7 +121,7 @@ ItemDisplay[NMAG ETH !INF SOCK=4 (6cs OR 6bs OR 6ws)]: %DGREEN%%NAME% %ORANGE%[S
 ItemDisplay[NMAG !INF WEAPON SOCK=6 (mpi OR wax OR 7mp OR 7wa OR 7gi OR 7gm OR hal OR spt OR 9cr OR 7gd OR lbb)]: %DGREEN%%NAME%
 
 // Circlets
-ItemDisplay[NMAG !ETH EQ7 SOCK=0]: %NAME% %YELLOW%CHARSI IMBUE
+ItemDisplay[NMAG !NORM !ETH EQ7 SOCK=0]: %NAME% %YELLOW%CHARSI IMBUE
 
 ItemDisplay[NMAG CLVL>19 (WEAPON OR ARMOR)]:
 
