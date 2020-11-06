@@ -1,0 +1,268 @@
+// Krv's filter - Created on 06-11-2020
+
+// Performance optimizers
+ItemDisplay[ID]: %NAME%
+ItemDisplay[RW]: %NAME%
+ItemDisplay[leg]: %NAME%
+ItemDisplay[CLVL>40 NMAG ARMOR ETH NORM]:
+ItemDisplay[CLVL>40 NMAG SOCK=1]:
+ItemDisplay[CLVL>40 MAG (aq2 OR cq2)]:
+
+// Name Additions
+ItemDisplay[ETH]: ETH %NAME%%CONTINUE%
+ItemDisplay[SOCKETS>0]: %NAME% %YELLOW%[%SOCKETS%]%CONTINUE%
+ItemDisplay[NMAG ED=15]: %NAME% %ORANGE%+15%ED%CONTINUE%
+ItemDisplay[NMAG (ED<15 AND ED>9)]: %NAME% %BLUE%+%ED%CONTINUE%
+ItemDisplay[QTY>1 (GEM>0 OR RUNE>0)]: %NAME% [%QTY%]%CONTINUE%
+
+// Gold
+ItemDisplay[CLVL>69 GOLD<5000]:
+ItemDisplay[CLVL>39 GOLD<3000]:
+ItemDisplay[GOLD<1000]:
+
+// Potions & Scrolls
+ItemDisplay[rvl]: %PURPLE%R %WHITE%70%
+ItemDisplay[rvs]: %PURPLE%r %WHITE%35%
+ItemDisplay[hp5]: %RED%!%WHITE%H+
+ItemDisplay[mp4]: %BLUE%!%WHITE%M
+ItemDisplay[mp5]: %BLUE%!%WHITE%M+
+ItemDisplay[CLVL<60 hp4]: %RED%!%WHITE%H
+ItemDisplay[CLVL<41 (hp1 OR hp2 OR hp3)]: %RED%!%WHITE%%NAME%
+ItemDisplay[CLVL<41 (mp1 OR mp2 OR mp3)]: %BLUE%!%WHITE%%NAME%
+ItemDisplay[CLVL<21 tsc]: %GREEN%!%WHITE%TP
+ItemDisplay[CLVL<21 isc]: %GREEN%!%WHITE%ID
+ItemDisplay[CLVL<21 (vps OR wms OR yps)]: %GREEN%!%WHITE%%NAME%
+ItemDisplay[hp1 OR hp2 OR hp3 OR hp4 OR mp1 OR mp2 OR mp3 OR tsc OR isc OR vps OR wms OR yps OR gpm OR opm OR opl OR ops OR gps OR gpl]:
+
+
+//############################################################################################
+//- PD2 ITEMS ------------ PD2 ITEMS ------------ PD2 ITEMS ------------ PD2 ITEMS -----------
+//############################################################################################
+ 
+//- WORLDSTONE SHARD AND LARZUK BOX ---
+ItemDisplay[wss QTY>1]: %RED%Worldstone Shard %WHITE%x%QTY%{%TAN%Whites: 50/50 socket/rare%NL%25% - Turn into rare%NL%25% - Add sockets%NL%50% - Add stat mod%NL%Corruption chances:}%MAP-62%
+ItemDisplay[lbox QTY>1]: %RED%%Larzuk's Puzzlebox %WHITE%x%QTY%{%TAN%Two-hand: 1-4 sockets%NL%One-hand: 1-2 sockets%NL%Helm, Chest, Shield: 1-2 sockets%NL%Socket maximums:}%MAP-62%
+ 
+ItemDisplay[wss]: %RED%Worldstone Shard{%TAN%Whites: 50/50 socket/rare%NL%25% - Turn into rare%NL%25% - Add sockets%NL%50% - Add stat mod%NL%Corruption chances:}%MAP-62%
+ItemDisplay[lbox]: %RED%%Larzuk's Puzzlebox{%TAN%Two-hand: 1-4 sockets%NL%One-hand: 1-2 sockets%NL%Helm, Chest, Shield: 1-2 sockets%NL%Socket maximums:}%MAP-62%
+ 
+//- MAP CRAFTING ----------------------
+ItemDisplay[(imra OR imma OR scou OR rera OR upma) QTY>1]: %NAME% %WHITE%x%QTY%%CONTINUE%//Map crafting orb quantity tag
+ 
+// Create rare map
+ItemDisplay[imra]: %RED%%NAME% %GRAY%(Create rare map){%TAN%White map + Jewel + Thul or greater}%DOT-80%// Zakarum Orb
+ 
+// Create magic map
+ItemDisplay[imma]: %RED%%NAME% %GRAY%(Create magic map){%TAN%White map + Jewel}%DOT-80%// Arcane Orb
+ 
+// Strip map properties
+ItemDisplay[scou]: %RED%%NAME% %GRAY%(Downgrade map to white){%TAN%Magic/rare map + Hel rune}%DOT-80%// Orb of Destruction
+ 
+// Reroll rare map
+ItemDisplay[rera]: %RED%%NAME% %GRAY%(Reroll rare map){%TAN%Rare map + Perfect gem + Thul or greater}%DOT-80%// Horadrim Orb
+ 
+// Upgrade magic map to rare
+ItemDisplay[upma]: %RED%%NAME% %GRAY%(Upgrade map: Magic to rare){%TAN%Magic map + Perfect Skull + Thul or greater}%DOT-80%// Angelic Orb
+ 
+//- MAP CRAFTING ----------------------
+ItemDisplay[t11]: %NAME%%MAP-62%// 
+ItemDisplay[t12]: %NAME%%MAP-62%// 
+ItemDisplay[t13]: %NAME%%MAP-62%// 
+ItemDisplay[t14]: %NAME%%MAP-62%// 
+ItemDisplay[t15]: %NAME%%MAP-62%// 
+ItemDisplay[t16]: %NAME%%MAP-62%// Ruins of Viz-Jun Map
+ItemDisplay[t17]: %NAME%%MAP-62%// The River of Blood
+ItemDisplay[t18]: %NAME%%MAP-62%// Lava map
+
+
+
+// Normal Items
+// +%ED Body Armours
+ItemDisplay[NMAG EQ2 (ED>0) (ltp OR xtp OR uui OR uea OR ula OR utu OR ung OR ucl OR urs OR uhn OR upl OR utp OR uld OR ult OR uth OR uar)]: %DGREEN%%NAME%
+
+// High Def Body Armours
+ItemDisplay[NMAG ETH EQ2 ((uui AND DEF>664) OR (uea AND DEF>668) OR (ula AND DEF>674) OR (utu AND DEF>684) OR (ung AND DEF>695) OR (ucl AND DEF>705) OR (urs AND DEF>710) OR (uhn AND DEF>718) OR (upl AND DEF>730) OR (utp AND DEF>735) OR (uld AND DEF>744) OR (ult AND DEF>754) OR (uth AND DEF>768) OR (uul AND DEF>792) OR (uar AND DEF>849) OR (utp AND DEF>620) OR (uar DEF>720))]: %DGREEN%%NAME%
+ItemDisplay[NMAG !ETH EQ2 ((uui AND DEF>439) OR (uea AND DEF>441) OR (ula AND DEF>445) OR (utu AND DEF>450) OR (ung AND DEF>460) OR (ucl AND DEF>470) OR (urs AND DEF>459) OR (uhn AND DEF>475) OR (upl AND DEF>485) OR (utp AND DEF>474) OR (uld AND DEF>495) OR (ult AND DEF>500) OR (uth AND DEF>505) OR (uul AND DEF>530) OR (uar AND DEF>560) OR (utp AND DEF>444) OR (uar DEF>520))]: %DGREEN%%NAME%
+
+// Any Elite Body Armours
+ItemDisplay[ELT EQ2 NMAG]: %NAME%
+
+// 2soc 3soc Light Plate / Mage Plate 
+ItemDisplay[NMAG CLVL<80 SOCK>1 (ltp OR xtp)]: %DGREEN%%NAME%
+
+// +%ED Helms
+ItemDisplay[NMAG EQ1 !ETH ED>9 (usk OR uh9 OR ci3)]: %DGREEN%%NAME%
+ItemDisplay[NMAG EQ1 !ETH (ED>0 AND ED <10) (usk OR uh9 OR ci3)]: %DGREEN%%NAME%
+
+// Shields
+ItemDisplay[NMAG (pab OR pac) RES=45]: %PURPLE%¤¤ %DGREEN%%NAME%%RED% +45%%PURPLE% ¤¤
+ItemDisplay[NMAG (pab OR pac) RES>39]: %PURPLE%¤ %DGREEN%%NAME%%ORANGE% 40%+%PURPLE% ¤
+ItemDisplay[NMAG CL3 ELT ITEMSTAT68>119]: %DGREEN%%NAME%%BLUE% 120+AR
+ItemDisplay[NMAG CL3 RES=45]: %DGREEN%%NAME%%RED% +45%
+ItemDisplay[NMAG CL3 RES>39]: %DGREEN%%NAME%%ORANGE% 40%+
+ItemDisplay[NMAG CL3 RES>29]: %DGREEN%%NAME%%BLUE% 30%+
+ItemDisplay[NMAG EQ3 ED>9 (uit OR ush OR urg)]: %DGREEN%%NAME%
+ItemDisplay[NMAG EQ3 (ED>0 AND ED <10) (uit OR ush OR urg)]: %DGREEN%%NAME%
+ItemDisplay[NMAG uit SOCK=4]: %DGREEN%%NAME%
+
+// +Skills Normal Items
+ItemDisplay[NMAG !ETH (TABSK34>2 AND (WP3 OR WP5 OR WP6)))]: %WHITE%%NAME%%YELLOW% +Skills
+ItemDisplay[NMAG WP11 ((SK58>2 OR SK49>2) OR (SOCK=2 AND (SK52>2 OR SK47>2 OR SK46>2)) OR (CLVL<40 AND (SK38>0 OR SK44>0 OR SK47>0)))]: %WHITE%%NAME%%YELLOW% +Skills
+ItemDisplay[NMAG WP13 !ETH (SK102>2 OR SK114>2 OR SK118>2 OR SK119>2 OR SK121>2 OR SK112>2)]: %WHITE%%NAME%%YELLOW% +Skills
+ItemDisplay[NMAG WP9 TABSK0>2 SOCK>2 (amb OR am6 OR amc)]: %WHITE%%NAME%%YELLOW% +Skills
+ItemDisplay[NMAG WEAPON !SOCK=2 (9lw OR 9tw OR 9qr OR 7ar OR 7wb OR 7lw OR 7tw OR 7qr) (SK271>2 OR SK278>2 OR SK273>2 OR SK253>2 OR SK267>2 OR SK277>2 OR SK258>2 OR SK262>2 OR SK261>2 OR SK276>2)]: %WHITE%%NAME%%YELLOW% +Skills
+ItemDisplay[NMAG CL6 (SK40>2 OR SK50>2 OR SK52>2 OR SK57>2 OR SK58>2 OR SK62>2 OR SK44>2 OR SK47>2 OR SK54>2 OR SK48>2 OR SK59>2 OR SK64>2 OR SK46>2)]: %WHITE%%NAME%%YELLOW% +Skills
+ItemDisplay[NMAG CL6 CLVL<50 (SK38>0 OR SK44>0 OR SK47>0)]: %WHITE%%NAME%%YELLOW% +Skills
+ItemDisplay[NMAG (CL4 OR WP12) !SOCK=1 (SK67>2 OR SK84>2 OR SK92>2 OR SK83>2 OR SK79>2 OR SK73>2 OR SK74>2 OR SK94>2)]: %WHITE%%NAME%%YELLOW% +Skills
+ItemDisplay[NMAG (CL4 OR WP12) CLVL<60 (SK67>0 OR SK84>0 OR SK92>0 OR SK83>0)]: %WHITE%%NAME%%YELLOW% +Skills
+ItemDisplay[NMAG CL1 !ETH (SK221>2 OR SK240>2 OR SK238>2 OR SK239>2 OR SK229>2 OR SK243>2 OR SK244>2 OR SK245>2 OR SK250>2 OR SK247>2)]: %WHITE%%NAME%%YELLOW% +Skills
+ItemDisplay[NMAG CL1 CLVL<50 (SK221>0 OR SK240>0 OR SK238>0 OR SK239>0 OR SK229>0 OR SK243>0 OR SK244>0 OR SK245>0 OR SK250>0 OR SK247>0)]: %WHITE%%NAME%%YELLOW% +Skills
+ItemDisplay[NMAG CL2 !ETH (SK154>2 OR SK150>2 OR SK149>2 OR SK133>2)]: %WHITE%%NAME%%YELLOW% +Skills
+
+// Low Req Runeword Bases
+ItemDisplay[NMAG SOCK>2 (crs OR fla)]: %DGREEN%%NAME%
+ItemDisplay[NMAG !ETH SOCK=0 CLVL<60 (crs OR bsd) (ILVL>25 AND ILVL<41)]: %DGREEN%%NAME%%WHITE% (4sox at larzuk) %WHITE%[L%ILVL%]
+ItemDisplay[NMAG !ETH SOCK=2 CLVL<60 EQ1]: %DGREEN%%NAME%
+ItemDisplay[NMAG !ETH SOCK=2 CLVL<60 EQ2]: %DGREEN%%NAME%
+ItemDisplay[NMAG !ETH SOCK=3 CLVL<60 EQ3]: %DGREEN%%NAME%
+
+// Lawbringer Swords - Legend Sword (and Conquest Sword, Cryptic Sword, Mythical Sword)
+ItemDisplay[NMAG 72h ETH ED>9 (SOCK=0 OR SOCK=3)]: %DGREEN%%NAME%
+ItemDisplay[NMAG 72h ETH (SOCK=0 OR SOCK=3)]: %DGREEN%%NAME%
+ItemDisplay[NMAG SOCK=3 CLVL<80 (72h OR 7bs OR 7ls OR 7wd]: %DGREEN%%NAME%
+
+// Good Polearms
+ItemDisplay[NMAG !INF WEAPON ETH SOCK>3 (7vo OR 7s8 OR 7pa OR 7h7 OR 7wc OR 7tr OR 7br OR 7st)]: %PURPLE%¤ %DGREEN%%NAME%%PURPLE% ¤
+ItemDisplay[NMAG !INF WEAPON SOCK=4 (7vo OR 7s8 OR 7pa OR 7h7 OR 7wc OR 7tr OR 7br OR 7st)]: %DGREEN%%NAME%
+ItemDisplay[NMAG CLVL<65 WEAPON SOCK=4 (vou OR scy OR pax OR hal OR wsc OR 9vo OR 9s8 OR 9pa OR 9h9 OR 9wc OR tri OR brn OR spt OR pik OR 9tr OR 9br OR 9st OR 9p9)]: %DGREEN%%NAME%
+
+// Good Weapon Bases - Ettin Axe, Berserker Axe, Glorious Axe, Scourge, Legendary Mallet, Thunder Maul, War Pike, Colossus Crossbow
+ItemDisplay[NMAG WEAPON (SOCK=0 OR SOCK>4) (7cr OR 72a OR 7wa OR 7gi OR 7fl OR 7wh OR 7gm OR 7p7 OR 6hx))]: %DGREEN%%NAME%
+
+// +ED Weapons
+ItemDisplay[NMAG ED>9 CLVL<60 (WP1 OR WP2 OR WP3 OR WP7 OR WP8 OR WP9 OR WP10 OR WP13)]: %DGREEN%%NAME%
+ItemDisplay[NMAG ELT ED>0 (WP1 OR WP2 OR WP3 OR WP7 OR WP8 OR WP9 OR WP10 OR WP13)]: %DGREEN%%NAME%
+ItemDisplay[NMAG WP9 !CL7 ELT ED>0 (SOCK=0 OR SOCK=4 OR SOCK=6)]: %DGREEN%%NAME%
+
+// Elite Amazon Spears 5/6os +ED
+ItemDisplay[NMAG !INF CL7 ELT TABSK2>2 (SOCK=0 OR SOCK>4)]: %DGREEN%%NAME%
+
+// Holy Thunder Runeword Bases (60 teleport charges)
+ItemDisplay[NMAG wsp SOCK=4]: %DGREEN%%NAME%
+ItemDisplay[NMAG wsp !SUP !INF SOCK=0 CLVL<70]: %DGREEN%%NAME% %ORANGE%Cube for 4os (Holy Thunder)
+
+// Shockwave Bases 
+ItemDisplay[NMAG ETH !INF SOCK=4 (6cs OR 6bs OR 6ws)]: %DGREEN%%NAME% %ORANGE%[Shockwave Insight Base]
+
+// Good 6 socket bases
+ItemDisplay[NMAG !INF WEAPON SOCK=6 (mpi OR wax OR 7mp OR 7wa OR 7gi OR 7gm OR hal OR spt OR 9cr OR 7gd OR lbb)]: %DGREEN%%NAME%
+
+// Circlets
+ItemDisplay[NMAG !NORM !ETH EQ7 SOCK=0]: %NAME% %YELLOW%CHARSI IMBUE
+
+ItemDisplay[NMAG CLVL>19 (WEAPON OR ARMOR)]: %GREY%%NAME%
+ItemDisplay[NMAG CLVL>49 (WEAPON OR ARMOR)]:
+
+// Magic Items
+ItemDisplay[!ID MAG (CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7)]: %NAME%
+ItemDisplay[!ID MAG CLVL>70 (EQ1 OR EQ2 OR EQ3 OR EQ5 OR EQ6)]:
+ItemDisplay[!ID MAG CLVL>30 (EQ1 OR EQ2 OR EQ3)]:
+
+// Crafting
+ItemDisplay[MAG !ETH (vgl OR xvg OR uvg) ILVL>50]: %ORANGE%Blood Gloves%WHITE% [L%ILVL% Nef]
+ItemDisplay[MAG (uvc OR zvb) ILVL>70]: %ORANGE%Caster Belt%WHITE% [L%ILVL% Ith]
+ItemDisplay[MAG (umc OR zmb) ILVL>80]: %ORANGE%Blood Belt%WHITE% [L%ILVL% Tal]
+ItemDisplay[MAG (ulb OR xlb OR lbt) ILVL>80]: %ORANGE%Caster Boots%WHITE% [L%ILVL% Thul]
+ItemDisplay[MAG (hlm OR xlm OR ulm) ILVL>60]: %ORANGE%Blood Helm %WHITE% [L%ILVL% Ral]
+ItemDisplay[MAG amu ILVL>97]: %BLUE%%NAME%%ORANGE% [CLVL 82+]
+ItemDisplay[MAG amu ILVL>95]: %BLUE%%NAME%%ORANGE% [CLVL 84+]
+ItemDisplay[MAG amu ILVL>93]: %BLUE%%NAME%%ORANGE% [CLVL 86+]
+ItemDisplay[MAG amu ILVL>91]: %BLUE%%NAME%%ORANGE% [CLVL 88+]
+ItemDisplay[MAG amu ILVL>89]: %BLUE%%NAME%%ORANGE% [CLVL 90+]
+ItemDisplay[MAG amu ILVL>87]: %BLUE%%NAME%%ORANGE% [CLVL 92+]
+ItemDisplay[MAG amu]: %BLUE%%NAME% %WHITE%[L%ILVL%]
+ItemDisplay[MAG rin ILVL>94]: %BLUE%%NAME%%ORANGE% [CLVL 74+]
+ItemDisplay[MAG rin ILVL>92]: %BLUE%%NAME%%ORANGE% [CLVL 76+]
+ItemDisplay[MAG rin ILVL>90]: %BLUE%%NAME%%ORANGE% [CLVL 78+]
+ItemDisplay[MAG rin ILVL=90]: %BLUE%%NAME%%ORANGE% [CLVL 80+]
+ItemDisplay[MAG rin ILVL>87]: %BLUE%%NAME%%ORANGE% [CLVL 82+]
+ItemDisplay[MAG rin ILVL>85]: %BLUE%%NAME%%ORANGE% [CLVL 84+]
+ItemDisplay[MAG rin]: %BLUE%%NAME%%WHITE% [L%ILVL%]
+ItemDisplay[MAG cm3 !ID ILVL>77]: %BLUE%¤ %NAME% %ORANGE%[L%ILVL%]%BLUE% ¤
+ItemDisplay[MAG cm3 ILVL>77]: %NAME% %ORANGE%[L%ILVL%]
+ItemDisplay[MAG cm3 !ID ILVL<78 ILVL>49]: %BLUE%¤ %NAME% %WHITE%[L%ILVL%]%BLUE% ¤
+ItemDisplay[MAG cm1 !ID ILVL>89]: %BLUE%¤ %NAME% %ORANGE%[L%ILVL%]%BLUE% ¤
+ItemDisplay[MAG cm1 !ID ILVL<90 ILVL>47]: %BLUE%¤ %NAME% %WHITE%[L%ILVL%]%BLUE% ¤
+ItemDisplay[MAG cm1 !ID ILVL=47]: %BLUE%¤ %NAME% %ORANGE%[L%ILVL%]%BLUE% ¤
+ItemDisplay[MAG cm1 ILVL=47]: %NAME% %ORANGE%[L%ILVL%]
+ItemDisplay[MAG cm1 ILVL>89]: %NAME% %ORANGE%[L%ILVL%]
+
+ItemDisplay[MAG (cm1 OR cm2 OR cm3)]: %NAME%%WHITE% [L%ILVL%]
+ItemDisplay[MAG !ID jew]: %BLUE% ¤ %NAME% ¤ %BLUE%
+ItemDisplay[NMAG !ID !ETH EQ7]: %NAME%
+ItemDisplay[MAG !ID CLVL>39]:
+
+// Rares
+// Circlets, Amulets, Rings, Jewels)
+ItemDisplay[RARE !ID (EQ7 OR amu OR rin OR jew)]: %PURPLE% ¤ %YELLOW%%NAME%%PURPLE% ¤
+// Gloves, Boots, Belts, Wands and Class rares
+ItemDisplay[RARE !ID (EQ4 OR EQ5 OR EQ6 OR WP12 OR CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7)]: %YELLOW%%NAME%
+// All elite rares
+ItemDisplay[RARE ELT !ID]: %YELLOW%%NAME%
+// Low level rares
+ItemDisplay[RARE NORM !ID CLVL<50 (ARMOR OR WEAPON)]: %NAME%
+// All the other rares hidden at levels 70+
+ItemDisplay[CLVL>70 RARE !ID]:
+
+// Uniques
+ItemDisplay[UNI !ID (uap OR ci3 OR xh9 OR uar OR uit OR ulc OR zhb OR 6lw OR 7gw OR dra OR nea OR obf OR cm1 OR cm2 OR cm3)]: %PURPLE%¤¤¤¤¤¤¤¤ %GOLD%%NAME% %PURPLE%¤¤¤¤¤¤¤¤
+ItemDisplay[UNI !ID (rin OR amu OR jew OR uhm OR xea OR uow OR uvg OR xhb OR xtb OR umc OR 7fl OR 7cr OR 7gd OR 7kr OR 7p7 OR dre OR baa OR pa9 OR 7cs OR obc OR oba)]: %PURPLE%¤¤¤¤ %GOLD%%NAME% %PURPLE%¤¤¤¤
+ItemDisplay[UNI !ID (usk OR xsk OR urn OR xrn OR ci2 OR xkp OR xlm OR ulm OR upl OR xlt OR uld OR uui OR xhn OR xpl OR xsh OR xml OR xts OR vgl OR mgl OR hgl OR tgl OR umg OR uhg OR tbt OR lbt OR xlb OR umb OR uvb OR xmb OR xvb OR tbl OR uvc OR zvb OR ztb OR zlb OR 7wa OR 7gi OR mau OR 7sp OR 7wh OR 7gm OR 9fc OR 7b7 OR 9ls OR 9fb OR dgr OR 7dg OR 7b8 OR 7bk OR 7s8 OR 7wc OR 6l7 OR 8lw OR 8hx OR rxb OR 6cs OR 7bw OR 9wn OR 7ws OR 9ws OR 7sc OR drb OR drd OR bac OR pac OR pa9 OR nee OR nef OR 9tw OR 7lw OR 7wb OR amb OR am7 OR amd OR amf OR ama)]: %PURPLE%¤¤ %GOLD%%NAME% %PURPLE%¤¤
+ItemDisplay[UNI]: %NAME%
+
+// Sets
+ItemDisplay[SET !ID (amu OR uth OR xul)]: %PURPLE%¤¤¤¤¤¤¤¤ %GREEN%%NAME% %PURPLE%¤¤¤¤¤¤¤¤
+ItemDisplay[SET !ID (uar OR utc OR xmg OR xtb)]: %PURPLE%¤¤¤¤ %GREEN%%NAME% %PURPLE%¤¤¤¤
+ItemDisplay[SET !ID (ulg OR 7gd OR 7wd OR xar OR ne9 OR ba5 OR 7m7 OR zhb OR xhg OR xhb OR xh9 OR 7qr OR ucl OR xmb OR xhm OR xml OR oba OR xsk OR zmb OR uh9)]: %PURPLE%¤¤ %GREEN%%NAME% %PURPLE%¤¤
+ItemDisplay[SET]: %NAME%
+
+//Vendor items
+ItemDisplay[WP12 !ETH (SK73>1 OR SK79>2 OR SK82>2 OR SK83>1 OR SK85>2 OR SK86>1 OR SK87>1 OR SK88>1 OR SK89>0 OR SK90>1 OR SK91>1 OR SK92>0 OR SK93>0 OR SK94>0 OR SK95>0)]: %ORANGE%($%PRICE%)
+ItemDisplay[!ETH (7tk OR 7ta OR 7bk)]: %ORANGE%($%PRICE%)
+
+// PoD specific items
+ItemDisplay[cx5 OR cx6 OR cx7]: %PURPLE%¤¤ %NAME% ¤¤
+
+// Uber Keys
+ItemDisplay[pk1]: %ORANGE%Terror [Countess]
+ItemDisplay[pk2]: %ORANGE%Hate [Summoner]
+ItemDisplay[pk3]: %ORANGE%Destruction [Nihlathak]
+ItemDisplay[dhn]: %ORANGE%Diablo's Horn
+ItemDisplay[bey]: %ORANGE%Baal's Eye
+ItemDisplay[mbr]: %ORANGE%Mephisto's Brain
+
+//Essences (Respec Token)
+ItemDisplay[tes]: %GOLD%Suffering [Andariel]
+ItemDisplay[ceh]: %GOLD%Hatred [Mephisto]
+ItemDisplay[bet]: %GOLD%Terror [Diablo]
+ItemDisplay[fed]: %GOLD%Destruction [Baal]
+
+// Runes
+ItemDisplay[RUNE>25]: %PURPLE% ¤¤¤¤¤¤¤¤ %RED%%RUNENAME%%PURPLE% ¤¤¤¤¤¤¤¤ [%RUNENUM%]
+ItemDisplay[RUNE>23]: %PURPLE% ¤¤¤¤ %RED%%RUNENAME%%PURPLE% ¤¤¤¤ [%RUNENUM%]
+ItemDisplay[RUNE>19]: %PURPLE% ¤¤ %RED%%RUNENAME%%PURPLE% ¤¤ [%RUNENUM%]
+ItemDisplay[RUNE>14]: %ORANGE%   %RUNENAME% [%RUNENUM%]   %ORANGE%
+ItemDisplay[RUNE>0]: %RUNENAME% [%RUNENUM%]
+
+// Gems
+ItemDisplay[CLVL>20 GEM=1]:
+ItemDisplay[CLVL>30 GEM=2]:
+ItemDisplay[CLVL>40 GEM=3]:
+ItemDisplay[gzv]: %ORANGE%Amethyst
+ItemDisplay[glw]: %ORANGE%Diamond
+ItemDisplay[glg]: %ORANGE%Emerald
+ItemDisplay[glr]: %ORANGE%Ruby
+ItemDisplay[glb]: %ORANGE%Sapphire
+ItemDisplay[gly]: %ORANGE%Topaz
+ItemDisplay[skl]: %ORANGE%Skull
+ItemDisplay[gpv OR gpw OR gpg OR gpr OR gpb OR gpy OR ckz]: %ORANGE%%NAME%
