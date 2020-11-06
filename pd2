@@ -1,7 +1,6 @@
 // Krv's filter - Created on 06-11-2020
 
 // Performance optimizers
-ItemDisplay[ID]: %NAME%
 ItemDisplay[RW]: %NAME%
 ItemDisplay[leg]: %NAME%
 ItemDisplay[CLVL>40 NMAG ARMOR ETH NORM]:
@@ -32,7 +31,9 @@ ItemDisplay[CLVL<41 (mp1 OR mp2 OR mp3)]: %BLUE%!%WHITE%%NAME%
 ItemDisplay[CLVL<21 tsc]: %GREEN%!%WHITE%TP
 ItemDisplay[CLVL<21 isc]: %GREEN%!%WHITE%ID
 ItemDisplay[CLVL<21 (vps OR wms OR yps)]: %GREEN%!%WHITE%%NAME%
-ItemDisplay[hp1 OR hp2 OR hp3 OR hp4 OR mp1 OR mp2 OR mp3 OR tsc OR isc OR vps OR wms OR yps OR gpm OR opm OR opl OR ops OR gps OR gpl]:
+ItemDisplay[hp1 OR hp2 OR hp3 OR hp4]:
+ItemDisplay[mp1 OR mp2 OR mp]:
+ItemDisplay[tsc OR isc OR vps OR wms OR yps OR gpm OR opm OR opl OR ops OR gps OR gpl]:
 
 
 //############################################################################################
