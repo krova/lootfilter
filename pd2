@@ -265,4 +265,4 @@ ItemDisplay[glr OR glrs]: %ORANGE%Ruby
 ItemDisplay[glb OR glbs]: %ORANGE%Sapphire
 ItemDisplay[gly OR glys]: %ORANGE%Topaz
 ItemDisplay[skl OR skls]: %ORANGE%Skull
-ItemDisplay[gpv OR gpw OR gpg OR gpr OR gpb OR gpy OR ckz OR gpvs OR gpws OR gpgs OR gprs OR gpbs OR gpys OR ckzs]: %ORANGE%%NAME%
+ItemDisplay[GEM=0]: %ORANGE%%NAME%
