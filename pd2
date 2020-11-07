@@ -1,6 +1,7 @@
 // Krv's filter - Created on 06-11-2020
 
 // Performance optimizers
+ItemDisplay[cqv OR aqv]:
 ItemDisplay[RW]: %NAME%
 ItemDisplay[leg]: %NAME%
 ItemDisplay[CLVL>40 NMAG ARMOR ETH NORM]:
@@ -12,7 +13,8 @@ ItemDisplay[ETH]: ETH %NAME%%CONTINUE%
 ItemDisplay[SOCKETS>0]: %NAME% %YELLOW%[%SOCKETS%]%CONTINUE%
 ItemDisplay[NMAG ED=15]: %NAME% %ORANGE%+15%ED%CONTINUE%
 ItemDisplay[NMAG (ED<15 AND ED>9)]: %NAME% %BLUE%+%ED%CONTINUE%
-ItemDisplay[QTY>1 (GEM OR RUNE)]: %QTY%x %NAME%%CONTINUE%
+ItemDisplay[QTY>1 RUNE>0]: %QTY%x %NAME%%CONTINUE%
+ItemDisplay[QTY>1 GEM>0]: %QTY%x %NAME%%CONTINUE%
 
 // Gold
 ItemDisplay[CLVL>69 GOLD<5000]:
@@ -96,8 +98,8 @@ ItemDisplay[NMAG EQ1 !ETH ED>9 (usk OR uh9 OR ci3)]: %GRAY%%NAME%
 ItemDisplay[NMAG EQ1 !ETH (ED>0 AND ED <10) (usk OR uh9 OR ci3)]: %GRAY%%NAME%
 
 // Shields
-ItemDisplay[NMAG (pab OR pac) RES=45]: %PURPLE%¤¤ %GRAY%%NAME%%RED% +45%%PURPLE% ¤¤
-ItemDisplay[NMAG (pab OR pac) RES>39]: %PURPLE%¤ %GRAY%%NAME%%ORANGE% 40%+%PURPLE% ¤
+ItemDisplay[NMAG (pab OR pac) RES=45]: %PURPLE%oo %GRAY%%NAME%%RED% +45%%PURPLE% oo
+ItemDisplay[NMAG (pab OR pac) RES>39]: %PURPLE%o %GRAY%%NAME%%ORANGE% 40%+%PURPLE% o
 ItemDisplay[NMAG CL3 ELT ITEMSTAT68>119]: %GRAY%%NAME%%BLUE% 120+AR
 ItemDisplay[NMAG CL3 RES=45]: %GRAY%%NAME%%RED% +45%
 ItemDisplay[NMAG CL3 RES>39]: %GRAY%%NAME%%ORANGE% 40%+
@@ -133,7 +135,7 @@ ItemDisplay[NMAG 72h ETH (SOCK=0 OR SOCK=3)]: %GRAY%%NAME%
 ItemDisplay[NMAG SOCK=3 CLVL<80 (72h OR 7bs OR 7ls OR 7wd]: %GRAY%%NAME%
 
 // Good Polearms
-ItemDisplay[NMAG !INF WEAPON ETH SOCK>3 (7vo OR 7s8 OR 7pa OR 7h7 OR 7wc OR 7tr OR 7br OR 7st)]: %PURPLE%¤ %GRAY%%NAME%%PURPLE% ¤
+ItemDisplay[NMAG !INF WEAPON ETH SOCK>3 (7vo OR 7s8 OR 7pa OR 7h7 OR 7wc OR 7tr OR 7br OR 7st)]: %PURPLE%o %GRAY%%NAME%%PURPLE% o
 ItemDisplay[NMAG !INF WEAPON SOCK=4 (7vo OR 7s8 OR 7pa OR 7h7 OR 7wc OR 7tr OR 7br OR 7st)]: %GRAY%%NAME%
 ItemDisplay[NMAG CLVL<65 WEAPON SOCK=4 (vou OR scy OR pax OR hal OR wsc OR 9vo OR 9s8 OR 9pa OR 9h9 OR 9wc OR tri OR brn OR spt OR pik OR 9tr OR 9br OR 9st OR 9p9)]: %GRAY%%NAME%
 
@@ -188,12 +190,12 @@ ItemDisplay[MAG rin ILVL=90]: %BLUE%%NAME%%ORANGE% [CLVL 80+]
 ItemDisplay[MAG rin ILVL>87]: %BLUE%%NAME%%ORANGE% [CLVL 82+]
 ItemDisplay[MAG rin ILVL>85]: %BLUE%%NAME%%ORANGE% [CLVL 84+]
 ItemDisplay[MAG rin]: %BLUE%%NAME%%WHITE% [L%ILVL%]
-ItemDisplay[MAG cm3 !ID ILVL>77]: %BLUE%¤ %NAME% %ORANGE%[L%ILVL%]%BLUE% ¤
+ItemDisplay[MAG cm3 !ID ILVL>77]: %BLUE%o %NAME% %ORANGE%[L%ILVL%]%BLUE% o
 ItemDisplay[MAG cm3 ILVL>77]: %NAME% %ORANGE%[L%ILVL%]
-ItemDisplay[MAG cm3 !ID ILVL<78 ILVL>49]: %BLUE%¤ %NAME% %WHITE%[L%ILVL%]%BLUE% ¤
-ItemDisplay[MAG cm1 !ID ILVL>89]: %BLUE%¤ %NAME% %ORANGE%[L%ILVL%]%BLUE% ¤
-ItemDisplay[MAG cm1 !ID ILVL<90 ILVL>47]: %BLUE%¤ %NAME% %WHITE%[L%ILVL%]%BLUE% ¤
-ItemDisplay[MAG cm1 !ID ILVL=47]: %BLUE%¤ %NAME% %ORANGE%[L%ILVL%]%BLUE% ¤
+ItemDisplay[MAG cm3 !ID ILVL<78 ILVL>49]: %BLUE%o %NAME% %WHITE%[L%ILVL%]%BLUE% o
+ItemDisplay[MAG cm1 !ID ILVL>89]: %BLUE%o %NAME% %ORANGE%[L%ILVL%]%BLUE% o
+ItemDisplay[MAG cm1 !ID ILVL<90 ILVL>47]: %BLUE%o %NAME% %WHITE%[L%ILVL%]%BLUE% o
+ItemDisplay[MAG cm1 !ID ILVL=47]: %BLUE%o %NAME% %ORANGE%[L%ILVL%]%BLUE% o
 ItemDisplay[MAG cm1 ILVL=47]: %NAME% %ORANGE%[L%ILVL%]
 ItemDisplay[MAG cm1 ILVL>89]: %NAME% %ORANGE%[L%ILVL%]
 
@@ -204,7 +206,7 @@ ItemDisplay[MAG !ID CLVL>39]:
 
 // Rares
 // Circlets, Amulets, Rings, Jewels)
-ItemDisplay[RARE !ID (EQ7 OR amu OR rin OR jew)]: %PURPLE% ¤ %YELLOW%%NAME%%PURPLE% ¤
+ItemDisplay[RARE !ID (EQ7 OR amu OR rin OR jew)]: %PURPLE% o %YELLOW%%NAME%%PURPLE% o
 // Gloves, Boots, Belts, Wands and Class rares
 ItemDisplay[RARE !ID (EQ4 OR EQ5 OR EQ6 OR WP12 OR CL1 OR CL2 OR CL3 OR CL4 OR CL5 OR CL6 OR CL7)]: %YELLOW%%NAME%
 // All elite rares
@@ -215,15 +217,15 @@ ItemDisplay[RARE NORM !ID CLVL<50 (ARMOR OR WEAPON)]: %NAME%
 ItemDisplay[CLVL>70 RARE !ID]:
 
 // Uniques
-ItemDisplay[UNI !ID (uap OR ci3 OR xh9 OR uar OR uit OR ulc OR zhb OR 6lw OR 7gw OR dra OR nea OR obf OR cm1 OR cm2 OR cm3)]: %PURPLE%¤¤¤¤¤¤¤¤ %GOLD%%NAME% %PURPLE%¤¤¤¤¤¤¤¤
-ItemDisplay[UNI !ID (rin OR amu OR jew OR uhm OR xea OR uow OR uvg OR xhb OR xtb OR umc OR 7fl OR 7cr OR 7gd OR 7kr OR 7p7 OR dre OR baa OR pa9 OR 7cs OR obc OR oba)]: %PURPLE%¤¤¤¤ %GOLD%%NAME% %PURPLE%¤¤¤¤
-ItemDisplay[UNI !ID (usk OR xsk OR urn OR xrn OR ci2 OR xkp OR xlm OR ulm OR upl OR xlt OR uld OR uui OR xhn OR xpl OR xsh OR xml OR xts OR vgl OR mgl OR hgl OR tgl OR umg OR uhg OR tbt OR lbt OR xlb OR umb OR uvb OR xmb OR xvb OR tbl OR uvc OR zvb OR ztb OR zlb OR 7wa OR 7gi OR mau OR 7sp OR 7wh OR 7gm OR 9fc OR 7b7 OR 9ls OR 9fb OR dgr OR 7dg OR 7b8 OR 7bk OR 7s8 OR 7wc OR 6l7 OR 8lw OR 8hx OR rxb OR 6cs OR 7bw OR 9wn OR 7ws OR 9ws OR 7sc OR drb OR drd OR bac OR pac OR pa9 OR nee OR nef OR 9tw OR 7lw OR 7wb OR amb OR am7 OR amd OR amf OR ama)]: %PURPLE%¤¤ %GOLD%%NAME% %PURPLE%¤¤
+ItemDisplay[UNI !ID (uap OR ci3 OR xh9 OR uar OR uit OR ulc OR zhb OR 6lw OR 7gw OR dra OR nea OR obf OR cm1 OR cm2 OR cm3)]: %PURPLE%oooooooo %GOLD%%NAME% %PURPLE%oooooooo
+ItemDisplay[UNI !ID (rin OR amu OR jew OR uhm OR xea OR uow OR uvg OR xhb OR xtb OR umc OR 7fl OR 7cr OR 7gd OR 7kr OR 7p7 OR dre OR baa OR pa9 OR 7cs OR obc OR oba)]: %PURPLE%oooo %GOLD%%NAME% %PURPLE%oooo
+ItemDisplay[UNI !ID (usk OR xsk OR urn OR xrn OR ci2 OR xkp OR xlm OR ulm OR upl OR xlt OR uld OR uui OR xhn OR xpl OR xsh OR xml OR xts OR vgl OR mgl OR hgl OR tgl OR umg OR uhg OR tbt OR lbt OR xlb OR umb OR uvb OR xmb OR xvb OR tbl OR uvc OR zvb OR ztb OR zlb OR 7wa OR 7gi OR mau OR 7sp OR 7wh OR 7gm OR 9fc OR 7b7 OR 9ls OR 9fb OR dgr OR 7dg OR 7b8 OR 7bk OR 7s8 OR 7wc OR 6l7 OR 8lw OR 8hx OR rxb OR 6cs OR 7bw OR 9wn OR 7ws OR 9ws OR 7sc OR drb OR drd OR bac OR pac OR pa9 OR nee OR nef OR 9tw OR 7lw OR 7wb OR amb OR am7 OR amd OR amf OR ama)]: %PURPLE%oo %GOLD%%NAME% %PURPLE%oo
 ItemDisplay[UNI]: %NAME%
 
 // Sets
-ItemDisplay[SET !ID (amu OR uth OR xul)]: %PURPLE%¤¤¤¤¤¤¤¤ %GREEN%%NAME% %PURPLE%¤¤¤¤¤¤¤¤
-ItemDisplay[SET !ID (uar OR utc OR xmg OR xtb)]: %PURPLE%¤¤¤¤ %GREEN%%NAME% %PURPLE%¤¤¤¤
-ItemDisplay[SET !ID (ulg OR 7gd OR 7wd OR xar OR ne9 OR ba5 OR 7m7 OR zhb OR xhg OR xhb OR xh9 OR 7qr OR ucl OR xmb OR xhm OR xml OR oba OR xsk OR zmb OR uh9)]: %PURPLE%¤¤ %GREEN%%NAME% %PURPLE%¤¤
+ItemDisplay[SET !ID (amu OR uth OR xul)]: %PURPLE%oooooooo %GREEN%%NAME% %PURPLE%oooooooo
+ItemDisplay[SET !ID (uar OR utc OR xmg OR xtb)]: %PURPLE%oooo %GREEN%%NAME% %PURPLE%oooo
+ItemDisplay[SET !ID (ulg OR 7gd OR 7wd OR xar OR ne9 OR ba5 OR 7m7 OR zhb OR xhg OR xhb OR xh9 OR 7qr OR ucl OR xmb OR xhm OR xml OR oba OR xsk OR zmb OR uh9)]: %PURPLE%oo %GREEN%%NAME% %PURPLE%oo
 ItemDisplay[SET]: %NAME%
 
 //Vendor items
@@ -231,7 +233,7 @@ ItemDisplay[WP12 !ETH (SK73>1 OR SK79>2 OR SK82>2 OR SK83>1 OR SK85>2 OR SK86>1 
 ItemDisplay[!ETH (7tk OR 7ta OR 7bk)]: %ORANGE%($%PRICE%)
 
 // PoD specific items
-ItemDisplay[cx5 OR cx6 OR cx7]: %PURPLE%¤¤ %NAME% ¤¤
+ItemDisplay[cx5 OR cx6 OR cx7]: %PURPLE%oo %NAME% oo
 
 // Uber Keys
 ItemDisplay[pk1]: %ORANGE%Terror [Countess]
@@ -248,21 +250,21 @@ ItemDisplay[bet]: %GOLD%Terror [Diablo]
 ItemDisplay[fed]: %GOLD%Destruction [Baal]
 
 // Runes
-ItemDisplay[RUNE>25]: %PURPLE% ¤¤¤¤¤¤¤¤ %RED%%RUNENAME%%PURPLE% ¤¤¤¤¤¤¤¤ [%RUNENUM%]
-ItemDisplay[RUNE>23]: %PURPLE% ¤¤¤¤ %RED%%RUNENAME%%PURPLE% ¤¤¤¤ [%RUNENUM%]
-ItemDisplay[RUNE>19]: %PURPLE% ¤¤ %RED%%RUNENAME%%PURPLE% ¤¤ [%RUNENUM%]
-ItemDisplay[RUNE>14]: %ORANGE%   %RUNENAME% [%RUNENUM%]   %ORANGE%
-ItemDisplay[RUNE>0]: %RUNENAME% [%RUNENUM%]
+ItemDisplay[RUNE>25]: %PURPLE% oooooooo %RED%%NAME%%PURPLE% oooooooo [%RUNENUM%]
+ItemDisplay[RUNE>23]: %PURPLE% oooo %RED%%NAME%%PURPLE% oooo [%RUNENUM%]
+ItemDisplay[RUNE>19]: %PURPLE% oo %RED%%NAME%%PURPLE% oo [%RUNENUM%]
+ItemDisplay[RUNE>14]: %ORANGE%   %NAME% [%RUNENUM%]   %ORANGE%
+ItemDisplay[RUNE>0]: %NAME% [%RUNENUM%]
 
 // Gems
 ItemDisplay[CLVL>20 GEM=1]:
 ItemDisplay[CLVL>30 GEM=2]:
 ItemDisplay[CLVL>40 GEM=3]:
-ItemDisplay[gzv]: %ORANGE%Amethyst
-ItemDisplay[glw]: %ORANGE%Diamond
-ItemDisplay[glg]: %ORANGE%Emerald
-ItemDisplay[glr]: %ORANGE%Ruby
-ItemDisplay[glb]: %ORANGE%Sapphire
-ItemDisplay[gly]: %ORANGE%Topaz
-ItemDisplay[skl]: %ORANGE%Skull
-ItemDisplay[gpv OR gpw OR gpg OR gpr OR gpb OR gpy OR ckz]: %ORANGE%%NAME%
+ItemDisplay[gzv OR gzvs]: %ORANGE%Amethyst
+ItemDisplay[glw OR glws]: %ORANGE%Diamond
+ItemDisplay[glg OR glgs]: %ORANGE%Emerald
+ItemDisplay[glr OR glrs]: %ORANGE%Ruby
+ItemDisplay[glb OR glbs]: %ORANGE%Sapphire
+ItemDisplay[gly OR glys]: %ORANGE%Topaz
+ItemDisplay[skl OR skls]: %ORANGE%Skull
+ItemDisplay[GEM=5]: %ORANGE%%NAME%
