@@ -12,8 +12,8 @@ ItemDisplay[ETH]: ETH %NAME%%CONTINUE%
 ItemDisplay[SOCKETS>0]: %NAME% %YELLOW%[%SOCKETS%]%CONTINUE%
 ItemDisplay[NMAG ED=15]: %NAME% %ORANGE%+15%ED%CONTINUE%
 ItemDisplay[NMAG (ED<15 AND ED>9)]: %NAME% %BLUE%+%ED%CONTINUE%
-ItemDisplay[NMAG ITEMSTAT91=-10]: %NAME% %ORANGE%-%REQ%CONTINUE%
-ItemDisplay[NMAG (ITEMSTAT91>-10 AND ITEMSTAT91<0)]: %NAME% %BLUE%-%REQ%CONTINUE%
+ItemDisplay[NMAG STAT91=-10]: %NAME% %ORANGE%-%REQ%CONTINUE%
+ItemDisplay[NMAG (STAT91>-10 AND STAT91<0)]: %NAME% %BLUE%-%REQ%CONTINUE%
 
 // Gold
 ItemDisplay[CLVL>69 GOLD<5000]:
@@ -40,33 +40,33 @@ ItemDisplay[CLVL>20 (gpm OR opm OR opl OR ops OR gps OR gpl)]:
 
 // Normal Items
 // +%ED Body Armours
-ItemDisplay[NMAG EQ2 (ED>0 OR ITEMSTAT91=-10) (ltp OR xtp OR uui OR uea OR ula OR utu OR ung OR ucl OR urs OR uhn OR upl OR utp OR uld OR ult OR uth OR uar)]: %DGREEN%%NAME%
+ItemDisplay[NMAG EQ2 (ED>0 OR STAT91=-10) (ltp OR xtp OR uui OR uea OR ula OR utu OR ung OR ucl OR urs OR uhn OR upl OR utp OR uld OR ult OR uth OR uar)]: %DARK_GREEN%%NAME%
 
 // High Def Body Armours
-ItemDisplay[NMAG ETH EQ2 ((uui AND DEF>664) OR (uea AND DEF>668) OR (ula AND DEF>674) OR (utu AND DEF>684) OR (ung AND DEF>695) OR (ucl AND DEF>705) OR (urs AND DEF>710) OR (uhn AND DEF>718) OR (upl AND DEF>730) OR (utp AND DEF>735) OR (uld AND DEF>744) OR (ult AND DEF>754) OR (uth AND DEF>768) OR (uul AND DEF>792) OR (uar AND DEF>849) OR (utp AND DEF>620) OR (uar DEF>720))]: %DGREEN%%NAME%
-ItemDisplay[NMAG !ETH EQ2 ((uui AND DEF>439) OR (uea AND DEF>441) OR (ula AND DEF>445) OR (utu AND DEF>450) OR (ung AND DEF>460) OR (ucl AND DEF>470) OR (urs AND DEF>459) OR (uhn AND DEF>475) OR (upl AND DEF>485) OR (utp AND DEF>474) OR (uld AND DEF>495) OR (ult AND DEF>500) OR (uth AND DEF>505) OR (uul AND DEF>530) OR (uar AND DEF>560) OR (utp AND DEF>444) OR (uar DEF>520))]: %DGREEN%%NAME%
+ItemDisplay[NMAG ETH EQ2 ((uui AND DEF>664) OR (uea AND DEF>668) OR (ula AND DEF>674) OR (utu AND DEF>684) OR (ung AND DEF>695) OR (ucl AND DEF>705) OR (urs AND DEF>710) OR (uhn AND DEF>718) OR (upl AND DEF>730) OR (utp AND DEF>735) OR (uld AND DEF>744) OR (ult AND DEF>754) OR (uth AND DEF>768) OR (uul AND DEF>792) OR (uar AND DEF>849) OR (utp AND DEF>620) OR (uar DEF>720))]: %DARK_GREEN%%NAME%
+ItemDisplay[NMAG !ETH EQ2 ((uui AND DEF>439) OR (uea AND DEF>441) OR (ula AND DEF>445) OR (utu AND DEF>450) OR (ung AND DEF>460) OR (ucl AND DEF>470) OR (urs AND DEF>459) OR (uhn AND DEF>475) OR (upl AND DEF>485) OR (utp AND DEF>474) OR (uld AND DEF>495) OR (ult AND DEF>500) OR (uth AND DEF>505) OR (uul AND DEF>530) OR (uar AND DEF>560) OR (utp AND DEF>444) OR (uar DEF>520))]: %DARK_GREEN%%NAME%
 
 // Any Elite Body Armours
 ItemDisplay[ELT EQ2 NMAG]: %NAME%
 
 // 2soc 3soc Light Plate / Mage Plate 
-ItemDisplay[NMAG CLVL<80 SOCK>1 (ltp OR xtp)]: %DGREEN%%NAME%
+ItemDisplay[NMAG CLVL<80 SOCK>1 (ltp OR xtp)]: %DARK_GREEN%%NAME%
 
 // +%ED Helms
-ItemDisplay[NMAG EQ1 !ETH ED>9 (usk OR uh9 OR ci3)]: %DGREEN%%NAME%
-ItemDisplay[NMAG EQ1 !ETH (ED>0 AND ED <10) (usk OR uh9 OR ci3)]: %DGREEN%%NAME%
+ItemDisplay[NMAG EQ1 !ETH ED>9 (usk OR uh9 OR ci3)]: %DARK_GREEN%%NAME%
+ItemDisplay[NMAG EQ1 !ETH (ED>0 AND ED <10) (usk OR uh9 OR ci3)]: %DARK_GREEN%%NAME%
 
 // Shields
-ItemDisplay[NMAG (pab OR pac) RES=45]: %PURPLE%¤¤ %DGREEN%%NAME%%RED% +45%%PURPLE% ¤¤
-ItemDisplay[NMAG (pab OR pac) RES>39]: %PURPLE%¤ %DGREEN%%NAME%%ORANGE% 40%+%PURPLE% ¤
-ItemDisplay[NMAG CL3 ELT ITEMSTAT68>119]: %DGREEN%%NAME%%BLUE% 120+AR
-ItemDisplay[NMAG CL3 RES=45]: %DGREEN%%NAME%%RED% +45%
-ItemDisplay[NMAG CL3 RES>39]: %DGREEN%%NAME%%ORANGE% 40%+
-ItemDisplay[NMAG CL3 RES>29]: %DGREEN%%NAME%%BLUE% 30%+
-ItemDisplay[NMAG EQ3 ITEMSTAT91=-10 (uit OR ush OR urg)]: %DGREEN%%NAME%
-ItemDisplay[NMAG EQ3 ED>9 (uit OR ush OR urg)]: %DGREEN%%NAME%
-ItemDisplay[NMAG EQ3 (ED>0 AND ED <10) (uit OR ush OR urg)]: %DGREEN%%NAME%
-ItemDisplay[NMAG uit SOCK=4]: %DGREEN%%NAME%
+ItemDisplay[NMAG (pab OR pac) RES=45]: %PURPLE%¤¤ %DARK_GREEN%%NAME%%RED% +45%%PURPLE% ¤¤
+ItemDisplay[NMAG (pab OR pac) RES>39]: %PURPLE%¤ %DARK_GREEN%%NAME%%ORANGE% 40%+%PURPLE% ¤
+ItemDisplay[NMAG CL3 ELT STAT68>119]: %DARK_GREEN%%NAME%%BLUE% 120+AR
+ItemDisplay[NMAG CL3 RES=45]: %DARK_GREEN%%NAME%%RED% +45%
+ItemDisplay[NMAG CL3 RES>39]: %DARK_GREEN%%NAME%%ORANGE% 40%+
+ItemDisplay[NMAG CL3 RES>29]: %DARK_GREEN%%NAME%%BLUE% 30%+
+ItemDisplay[NMAG EQ3 STAT91=-10 (uit OR ush OR urg)]: %DARK_GREEN%%NAME%
+ItemDisplay[NMAG EQ3 ED>9 (uit OR ush OR urg)]: %DARK_GREEN%%NAME%
+ItemDisplay[NMAG EQ3 (ED>0 AND ED <10) (uit OR ush OR urg)]: %DARK_GREEN%%NAME%
+ItemDisplay[NMAG uit SOCK=4]: %DARK_GREEN%%NAME%
 
 // +Skills Normal Items
 ItemDisplay[NMAG !ETH (TABSK34>2 AND (WP3 OR WP5 OR WP6)))]: %WHITE%%NAME%%YELLOW% +Skills
@@ -83,42 +83,42 @@ ItemDisplay[NMAG CL1 CLVL<50 (SK221>0 OR SK240>0 OR SK238>0 OR SK239>0 OR SK229>
 ItemDisplay[NMAG CL2 !ETH (SK154>2 OR SK150>2 OR SK149>2 OR SK133>2)]: %WHITE%%NAME%%YELLOW% +Skills
 
 // Low Req Runeword Bases
-ItemDisplay[NMAG SOCK>2 (crs OR fla)]: %DGREEN%%NAME%
-ItemDisplay[NMAG !ETH SOCK=0 CLVL<60 (crs OR bsd) (ILVL>25 AND ILVL<41)]: %DGREEN%%NAME%%WHITE% (4sox at larzuk) %WHITE%[L%ILVL%]
-ItemDisplay[NMAG !ETH SOCK=2 CLVL<60 EQ1]: %DGREEN%%NAME%
-ItemDisplay[NMAG !ETH SOCK=2 CLVL<60 EQ2]: %DGREEN%%NAME%
-ItemDisplay[NMAG !ETH SOCK=3 CLVL<60 EQ3]: %DGREEN%%NAME%
+ItemDisplay[NMAG SOCK>2 (crs OR fla)]: %DARK_GREEN%%NAME%
+ItemDisplay[NMAG !ETH SOCK=0 CLVL<60 (crs OR bsd) (ILVL>25 AND ILVL<41)]: %DARK_GREEN%%NAME%%WHITE% (4sox at larzuk) %WHITE%[L%ILVL%]
+ItemDisplay[NMAG !ETH SOCK=2 CLVL<60 EQ1]: %DARK_GREEN%%NAME%
+ItemDisplay[NMAG !ETH SOCK=2 CLVL<60 EQ2]: %DARK_GREEN%%NAME%
+ItemDisplay[NMAG !ETH SOCK=3 CLVL<60 EQ3]: %DARK_GREEN%%NAME%
 
 // Lawbringer Swords - Legend Sword (and Conquest Sword, Cryptic Sword, Mythical Sword)
-ItemDisplay[NMAG 72h ETH ED>9 (SOCK=0 OR SOCK=3)]: %DGREEN%%NAME%
-ItemDisplay[NMAG 72h ETH (SOCK=0 OR SOCK=3)]: %DGREEN%%NAME%
-ItemDisplay[NMAG SOCK=3 CLVL<80 (72h OR 7bs OR 7ls OR 7wd]: %DGREEN%%NAME%
+ItemDisplay[NMAG 72h ETH ED>9 (SOCK=0 OR SOCK=3)]: %DARK_GREEN%%NAME%
+ItemDisplay[NMAG 72h ETH (SOCK=0 OR SOCK=3)]: %DARK_GREEN%%NAME%
+ItemDisplay[NMAG SOCK=3 CLVL<80 (72h OR 7bs OR 7ls OR 7wd]: %DARK_GREEN%%NAME%
 
 // Good Polearms
-ItemDisplay[NMAG !INF WEAPON ETH SOCK>3 (7vo OR 7s8 OR 7pa OR 7h7 OR 7wc OR 7tr OR 7br OR 7st)]: %PURPLE%¤ %DGREEN%%NAME%%PURPLE% ¤
-ItemDisplay[NMAG !INF WEAPON SOCK=4 (7vo OR 7s8 OR 7pa OR 7h7 OR 7wc OR 7tr OR 7br OR 7st)]: %DGREEN%%NAME%
-ItemDisplay[NMAG CLVL<65 WEAPON SOCK=4 (vou OR scy OR pax OR hal OR wsc OR 9vo OR 9s8 OR 9pa OR 9h9 OR 9wc OR tri OR brn OR spt OR pik OR 9tr OR 9br OR 9st OR 9p9)]: %DGREEN%%NAME%
+ItemDisplay[NMAG !INF WEAPON ETH SOCK>3 (7vo OR 7s8 OR 7pa OR 7h7 OR 7wc OR 7tr OR 7br OR 7st)]: %PURPLE%¤ %DARK_GREEN%%NAME%%PURPLE% ¤
+ItemDisplay[NMAG !INF WEAPON SOCK=4 (7vo OR 7s8 OR 7pa OR 7h7 OR 7wc OR 7tr OR 7br OR 7st)]: %DARK_GREEN%%NAME%
+ItemDisplay[NMAG CLVL<65 WEAPON SOCK=4 (vou OR scy OR pax OR hal OR wsc OR 9vo OR 9s8 OR 9pa OR 9h9 OR 9wc OR tri OR brn OR spt OR pik OR 9tr OR 9br OR 9st OR 9p9)]: %DARK_GREEN%%NAME%
 
 // Good Weapon Bases - Ettin Axe, Berserker Axe, Glorious Axe, Scourge, Legendary Mallet, Thunder Maul, War Pike, Colossus Crossbow
-ItemDisplay[NMAG WEAPON (SOCK=0 OR SOCK>4) (7cr OR 72a OR 7wa OR 7gi OR 7fl OR 7wh OR 7gm OR 7p7 OR 6hx))]: %DGREEN%%NAME%
+ItemDisplay[NMAG WEAPON (SOCK=0 OR SOCK>4) (7cr OR 72a OR 7wa OR 7gi OR 7fl OR 7wh OR 7gm OR 7p7 OR 6hx))]: %DARK_GREEN%%NAME%
 
 // +ED Weapons
-ItemDisplay[NMAG ED>9 CLVL<60 (WP1 OR WP2 OR WP3 OR WP7 OR WP8 OR WP9 OR WP10 OR WP13)]: %DGREEN%%NAME%
-ItemDisplay[NMAG ELT ED>0 (WP1 OR WP2 OR WP3 OR WP7 OR WP8 OR WP9 OR WP10 OR WP13)]: %DGREEN%%NAME%
-ItemDisplay[NMAG WP9 !CL7 ELT ED>0 (SOCK=0 OR SOCK=4 OR SOCK=6)]: %DGREEN%%NAME%
+ItemDisplay[NMAG ED>9 CLVL<60 (WP1 OR WP2 OR WP3 OR WP7 OR WP8 OR WP9 OR WP10 OR WP13)]: %DARK_GREEN%%NAME%
+ItemDisplay[NMAG ELT ED>0 (WP1 OR WP2 OR WP3 OR WP7 OR WP8 OR WP9 OR WP10 OR WP13)]: %DARK_GREEN%%NAME%
+ItemDisplay[NMAG WP9 !CL7 ELT ED>0 (SOCK=0 OR SOCK=4 OR SOCK=6)]: %DARK_GREEN%%NAME%
 
 // Elite Amazon Spears 5/6os +ED
-ItemDisplay[NMAG !INF CL7 ELT TABSK2>2 (SOCK=0 OR SOCK>4)]: %DGREEN%%NAME%
+ItemDisplay[NMAG !INF CL7 ELT TABSK2>2 (SOCK=0 OR SOCK>4)]: %DARK_GREEN%%NAME%
 
 // Holy Thunder Runeword Bases (60 teleport charges)
-ItemDisplay[NMAG wsp SOCK=4]: %DGREEN%%NAME%
-ItemDisplay[NMAG wsp !SUP !INF SOCK=0 CLVL<70]: %DGREEN%%NAME% %ORANGE%Cube for 4os (Holy Thunder)
+ItemDisplay[NMAG wsp SOCK=4]: %DARK_GREEN%%NAME%
+ItemDisplay[NMAG wsp !SUP !INF SOCK=0 CLVL<70]: %DARK_GREEN%%NAME% %ORANGE%Cube for 4os (Holy Thunder)
 
 // Shockwave Bases 
-ItemDisplay[NMAG ETH !INF SOCK=4 (6cs OR 6bs OR 6ws)]: %DGREEN%%NAME% %ORANGE%[Shockwave Insight Base]
+ItemDisplay[NMAG ETH !INF SOCK=4 (6cs OR 6bs OR 6ws)]: %DARK_GREEN%%NAME% %ORANGE%[Shockwave Insight Base]
 
 // Good 6 socket bases
-ItemDisplay[NMAG !INF WEAPON SOCK=6 (mpi OR wax OR 7mp OR 7wa OR 7gi OR 7gm OR hal OR spt OR 9cr OR 7gd OR lbb)]: %DGREEN%%NAME%
+ItemDisplay[NMAG !INF WEAPON SOCK=6 (mpi OR wax OR 7mp OR 7wa OR 7gi OR 7gm OR hal OR spt OR 9cr OR 7gd OR lbb)]: %DARK_GREEN%%NAME%
 
 // Circlets
 ItemDisplay[NMAG !NORM !ETH EQ7 SOCK=0]: %NAME% %YELLOW%CHARSI IMBUE
